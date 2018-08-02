@@ -153,9 +153,9 @@ https://github.com/yoyoyohamapi/mit-ml 斯坦福机器学习完整 python 实现
 ## 建议
 在jupyter notebook下使用runkMeans.ipynb文件   
 ## runkMeans.ipynb文件整体结构说明
-代码正文共三个部分：
-1、加载共享的函数和库，增加了newCluster函数  
-2、主调main ：作为测试口，提供同一数据集上的各个kmeans的测试比较  
+代码正文共三个部分：  
+1、加载共享的函数和库，增加了newCluster函数    
+2、主调main ：作为测试口，提供同一数据集上的各个kmeans的测试比较    
 改进的bi-kmeans用时更短。 
 以下是比较的结果，可以亲试：  
 #centroids, clusterAssment = kMeans(dataMat,6)   
@@ -184,7 +184,7 @@ https://github.com/yoyoyohamapi/mit-ml 斯坦福机器学习完整 python 实现
     程序的实现，经过探索发现，是有章可循的。  
 
 ## 展望  
-   希望陆续的推陈出新，贡献精品美餐，以飨读者。  
+   希望陆续的推陈出新，扩展框架，贡献精品美餐，以飨读者。  
 
 
 
