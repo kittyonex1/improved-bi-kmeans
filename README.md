@@ -152,21 +152,21 @@ https://github.com/yoyoyohamapi/mit-ml 斯坦福机器学习完整 python 实现
 
 ## 建议
 在jupyter notebook下使用runkMeans.ipynb文件   
-## runkMeans.ipynb文件整体结构说明
+## runkMeans.ipynb文件整体结构说明  
 代码正文共三个部分：  
 1、加载共享的函数和库，增加了newCluster函数    
 2、主调main ：作为测试口，提供同一数据集上的各个kmeans的测试比较    
-改进的bi-kmeans用时更短。 
+改进的bi-kmeans用时更短。   
 以下是比较的结果，可以亲试：  
-#centroids, clusterAssment = kMeans(dataMat,6)   
-    #6运行时间 0.2850019931793213  
-    #kmeans.2运行时间  0.09799885749816895
-#centroids, clusterAssment = biKmeans(dataMat, 6)   
-    #6 运行时间 0.3880009651184082 #注意对空簇的处置        
-    #2运行时间 0.13300228118896484
-    centroids, clusterAssment = biKmeans_(dataMat,6)    
+#centroids, clusterAssment = kMeans(dataMat,6)     
+    #6运行时间 0.2850019931793213    
+    #kmeans.2运行时间  0.09799885749816895    
+#centroids, clusterAssment = biKmeans(dataMat, 6)     
+    #6 运行时间 0.3880009651184082 #注意对空簇的处置            
+    #2运行时间 0.13300228118896484  
+    centroids, clusterAssment = biKmeans_(dataMat,6)      
     #6运行时间 0.28999781608581543    
-    #2运行时间 0.3789994716644287  
+    #2运行时间 0.3789994716644287    
 
 3、汇总各种方案，即各种bi-kmeans方法  
 包括专门的精简代码，标准的bi-kmeans代码，本次改进的bi-kmeans代码  
