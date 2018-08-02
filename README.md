@@ -126,7 +126,7 @@ disCenterIDs表，disCentroids表，disErrorSum表，disErrorDelta表，dissplit
 新生簇中心表 newClusterCentroids 新生簇的中心点坐标，新生的是两个子簇，故为2组坐标的列表。     
 新生簇的所属表 newClusterAssment 新生簇的误差平方和newClusterErrorSum 新生簇在当前簇集中的序号    Indexes_of_newClusterCentroids_In_currentCentroids 新生簇没有ErrorDelta表，因为还没有分裂    
 
-数据对象的生命周期： 注意区分使用和生成（更新）、初始化，以此为线索检查调试程序。    
+数据对象的生命周期： 注意区分使用和生成（一般设空值）、初始化赋值（更新），以此为线索检查调试程序。    
 
 ## 技术小trick    
 #按：注意：0,1两簇的编号如果直接按照needToSplit和len(currentCentroids) 更新      
