@@ -120,7 +120,10 @@ subClusterErrorSum表存放各子簇的误差平方和SSE√ 身份只是中间�
 ErrorDelta表 子簇划分带来的误差平方和降低量，二分割新簇得到的新生母簇时生成，用于分裂母簇选拔。    
 
 辅助的历史记录表 在母簇分裂时更新 discenter表示被分裂的一代代母簇    
-#存储有：中心点，含有的误差平方和，母子分支的误差平方和的降低量，分裂后的残差平方和，初始为np.inf   
+#存储有：  
+中心点，含有的误差平方和，
+母子分支的误差平方和的降低量，分裂后的残差平方和，初始和新生成时都空置，其更新在新簇二分割聚类生成母簇时进行。   
+就有了
 disCenterIDs表，disCentroids表，disErrorSum表，disErrorDelta表，dissplitedError表  
 
 新生簇（初始条件和循环结束条件）newCluster：   
